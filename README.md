@@ -27,14 +27,14 @@ Carol Balleza
 - Recall (weighted): **0.89**  
 - F1 Score (weighted): **0.89**  
 
-The model predicts the diabetes class with high accuracy. The model struggles with *class 1* due to fewer samples in the class, but performs well on classes 0 and 2.  
+The model predicts the diabetes class with high accuracy. The model struggles with class 1 due to fewer samples in the class, but performs well on classes 0 and 2.  
 
 ### Regression Results  
 - RMSE: **4.15**  
 - MAE: **3.26**  
 - R²: **0.37**  
 
-The model shows there is **37% variance** in BMI.  
+The model shows there is 37% variance in BMI.  
 
 ---
 
