@@ -22,17 +22,17 @@ Carol Balleza
 ## Model Evaluation  
 
 ### Classification Results  
-- Accuracy: **0.89 (89%)**  
-- Precision (weighted): **0.89**  
-- Recall (weighted): **0.89**  
-- F1 Score (weighted): **0.89**  
+- Accuracy (overall correctness): **0.89 (89%)**  
+- Precision (how many predicted positives are real (weighted)): **0.89**  
+- Recall (how many real positives are caught by model (weighted)): **0.89**  
+- F1 Score (balance of precision and recall (weighted)): **0.89**  
 
 The model predicts the diabetes class with high accuracy. The model struggles with class 1 due to fewer samples in the class, but performs well on classes 0 and 2.  
 
 ### Regression Results  
-- RMSE: **4.15**  
-- MAE: **3.26**  
-- R²: **0.37**  
+- RMSE (typical size of errors): **4.15**  
+- MAE (average size of errors): **3.26**  
+- R² (how much variance is explained by model): **0.37**  
 
 The model shows there is 37% variance in BMI.  
 
