@@ -1,1 +1,40 @@
 # CS4680-A1
+#Carol Balleza
+
+#Problem Identification
+Goal: Predict which diabetes class a patient belongs to and predict a patient's BMI based on lab results and demographic features
+Target: Class and BMI
+Features: Gender, Age, Urea, Cr, HbA1c, Chol, TG, HDL, LDL, VLDL
+
+#Model Training
+The dataset was split into 80% training and 20% testing using train_test_split and random_state=42 
+Models used: 
+Classification (LogisticRegression(max_iter = 5000): trained on features, target = class
+Regression (LinearRegression()): trained on same features as classification model, target = BMI
+
+#Model Evaluation
+Classification:
+Accuracy: 0.89 (89%)
+Precision (weighted): 0.89
+Recall (weighted): 0.89
+F1 Score (weighted): 0.89
+
+The model predicts the diabetes class with high accuracy. The model struggles with class1 due to fewer samples in the class, but performs well on classes 0 and 2.
+
+Regression:
+RMSE: 4.15
+MAE: 3.26
+R^2: 0.37
+
+The model shows there is 37% variance in BMI.
+
+#Comparison and Suitability
+
+Classification: suitable for this dataset due to high accuracy and reliable in predicting patient diabetes class.
+
+Regression: less suitable since there is moderate performance and BMI could depend on other unmeasured factors not found in the dataset which can limit predictions.
+
+#Conclusion
+
+The classification model is best suited for this dataset since it gives a strong performance. The regression model is not as suited since it demonstrates that BMI can't be predicted accurately with the features from the dataset. 
+
